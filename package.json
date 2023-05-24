@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "name": "web-shake-report",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ],
+  "scripts": {
+    "start": ""
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "private": true,
+  "name": "@examples/core",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "concurrently \"yarn workspace @wsr/core dev\" \"rollup -cw\""
+  },
+  "dependencies": {
+    "@wsr/core": "workspace:*",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.8",
+    "@babel/preset-env": "^7.21.5",
+    "@rollup/plugin-commonjs": "^25.0.0",
+    "@rollup/plugin-html": "^1.0.2",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "concurrently": "^8.0.1",
+    "rollup": "^3.22.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-live-server": "^2.0.0"
+  }
+}
