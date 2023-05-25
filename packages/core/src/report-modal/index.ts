@@ -104,7 +104,15 @@ class ReportModal {
   private setLoading(loading: boolean) {
     const footer = this.root!.querySelector("footer")!;
     const submitBtn = footer.querySelector(".submit-btn")! as HTMLElement;
-    submitBtn.innerText = loading ? "LOADING..." : "SUBMIT";
+    if (loading) {
+      submitBtn.innerText = "LOADING...";
+      submitBtn.setAttribute("disabled", "true");
+      submitBtn.classList.add(styles["disabled-btn"]);
+    } else {
+      submitBtn.innerText = "SUBMIT";
+      submitBtn.removeAttribute("disabled");
+      submitBtn.classList.remove(styles["disabled-btn"]);
+    }
   }
 
   dispose() {
@@ -210,10 +218,12 @@ class ReportModal {
       const data = await this.getFormData();
       if (!this.validate(data)) return;
       this.setLoading(true);
-      await this.reporter().report(data);
+      const issueId = await this.reporter().report(data);
+      // TODO: toast
+      alert(`issue reported successfully! Issue Id: ${issueId}`);
     } catch (e: any) {
       console.error(e);
-      // toast
+      // TODO: toast
       alert("something went wrong" + e.message || "");
     } finally {
       this.setLoading(false);

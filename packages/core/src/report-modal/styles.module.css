@@ -87,9 +87,12 @@
   outline: 0;
   border: none;
   color: white;
-  background-color: lightskyblue;
+  background-color: #229dea;
   font-weight: bold;
   cursor: pointer;
+}
+.disabled-btn {
+  background: lightskyblue;
 }
 
 .input-error {

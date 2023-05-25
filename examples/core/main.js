@@ -5,12 +5,10 @@ import {
 
 new WebShakeReport({
   reporter: new JiraReporter({
-    url: "https://aligarajian.atlassian.net/",
-    credentials: {
-      user_email: "aligarajian1@gmail.com",
-      api_token:
-        "ATATT3xFfGF0H-NLfIat08EMlMRH3BlluweKEU6fmzIDRjE4eg_4f01hODZdhreZjN0InP3mJceVYbVT5LxPQmo6QrCSAMgJsr2CnlHRbWs237rp2tQPCNQ0PWwV9MR9SGsV5_cA8a0d5yXIyuDF2Xa6fKivxYwZO7C8oe82laZy_0-D7D5Gxcg=76094D96",
-    },
+    client_id: "KAzh1YDVjcpV8Z9orw2857tcpqhyDeCm",
+    client_secret:
+      "ATOAb2-wuRaX-wll-OzYP2Pl3z2CB4ibTkGhpqIF9--g--0DqKOMDCIxuc0eVE-iTY1LF4E0CFC6",
+    redirect_url: "http://127.0.0.1:8001/",
     meta: {
       project: {
         id: "10000",
