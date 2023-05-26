@@ -24,9 +24,6 @@ class WebShakeReport {
 
       this.modal.mount();
       this.initialized = true;
-
-      const screenshot = await this.takeScreenshot();
-      this.modal.addScreenshot(screenshot);
     }
   }
 

@@ -18,7 +18,7 @@ class ReportModal {
   // this is for mobile. handle desktop
   mount() {
     this.root = document.createElement("div");
-    this.root.classList.add(styles.root, styles.show);
+    this.root.classList.add(styles.root);
 
     // header
     const header = document.createElement("header");

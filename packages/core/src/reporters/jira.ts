@@ -95,8 +95,7 @@ export class JiraReporter implements IReporter {
       const popup = window.open(
         `https://auth.atlassian.com/authorize?audience=api.atlassian.com&client_id=${this.config.client_id}&scope=write:jira-work&redirect_uri=${this.config.redirect_url}&state=${this.user_bound_state}&response_type=code&prompt=consent`,
         "atlassian_authorization",
-        `popup=true,scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no,
-      width=500,height=700,left=50%,top=50%`
+        `popup=true,scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no,width=500,height=700,left=50%,top=50%`
       );
 
       if (!popup) {
