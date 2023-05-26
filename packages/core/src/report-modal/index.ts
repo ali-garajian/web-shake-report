@@ -49,11 +49,11 @@ class ReportModal {
     footer.innerHTML = "";
 
     // settings button
-    const settingsButton = document.createElement("span");
-    settingsButton.innerHTML = "&#9881;";
-    settingsButton.onclick = () => this.renderSettingsView();
-    settingsButton.classList.add(styles["settings-btn"]);
-    header.appendChild(settingsButton);
+    // const settingsButton = document.createElement("span");
+    // settingsButton.innerHTML = "&#9881;";
+    // settingsButton.onclick = () => this.renderSettingsView();
+    // settingsButton.classList.add(styles["settings-btn"]);
+    // header.appendChild(settingsButton);
 
     // close button
     const closeButton = document.createElement("span");
