@@ -1,5 +1,6 @@
 import type { WSRConfig } from "types/types";
 import styles from "./styles.module.css";
+import { Toast } from "toast";
 
 class ReportModal {
   private root: HTMLDivElement | null = null;
@@ -219,12 +220,29 @@ class ReportModal {
       if (!this.validate(data)) return;
       this.setLoading(true);
       const issueId = await this.reporter().report(data);
-      // TODO: toast
-      alert(`issue reported successfully! Issue Id: ${issueId}`);
+      Toast.success(
+        `
+        issue reported successfully!
+        <br />
+        Issue Id: ${issueId}
+      `,
+        {
+          timeout: 5000,
+        }
+      );
     } catch (e: any) {
       console.error(e);
-      // TODO: toast
-      alert("something went wrong" + e.message || "");
+      Toast.error(`
+        Something went wrong!
+        ${
+          !!e.message
+            ? `
+              <br />
+              ${e.message}
+            `
+            : ""
+        }
+      `);
     } finally {
       this.setLoading(false);
     }

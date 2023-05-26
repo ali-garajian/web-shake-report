@@ -1,0 +1,26 @@
+.toast {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  max-width: 95%;
+  min-width: 300px;
+  min-height: 30px;
+  border-radius: 5px;
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+.show {
+  transform: translate(-50%, 8px);
+}
+.success {
+  background-color: green;
+  color: white;
+}
+.error {
+  background-color: red;
+  color: white;
+}
