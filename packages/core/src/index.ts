@@ -34,7 +34,7 @@ class WebShakeReport {
     }
   }
 
-  async takeScreenshot() {
+  private async takeScreenshot() {
     const canvas = await html2canvas(document.body);
     return canvas;
   }
