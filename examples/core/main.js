@@ -1,7 +1,4 @@
-import {
-  WebShakeReport,
-  JiraReporter,
-} from "../../packages/core/build/core.min.js";
+import { WebShakeReport, JiraReporter } from "../../build/core.min.js";
 
 new WebShakeReport({
   reporter: new JiraReporter({

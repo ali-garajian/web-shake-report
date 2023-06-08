@@ -8,7 +8,6 @@
     "start": "concurrently \"yarn workspace @wsr/core dev\" \"rollup -cw\""
   },
   "dependencies": {
-    "@wsr/core": "workspace:*",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
