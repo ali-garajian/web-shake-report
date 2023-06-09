@@ -1,6 +1,6 @@
 {
   "name": "wsr",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Web Shake to Report: combines shake.js with html2canvas to provide shake to report functionality for mobile development on web",
   "author": {
     "name": "ali garajian",
