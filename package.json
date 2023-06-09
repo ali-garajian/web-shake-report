@@ -23,7 +23,7 @@
   "scripts": {
     "dev": "NODE_ENV=development rollup -cw",
     "build": "NODE_ENV=production rollup -c",
-    "publish": "npm run build && cp package.json ./build && cd ./build && npm publish"
+    "deploy": "npm run build && cp package.json ./build && cd ./build && npm publish"
   },
   "dependencies": {
     "html2canvas": "^1.4.1",
