@@ -8,9 +8,8 @@ const isProd = process.env.NODE_ENV === "production";
 export default {
   input: "./src/index.ts",
   output: {
-    file: "./build/core.min.js",
+    file: "./build/index.min.js",
     format: "es",
-    name: "core",
   },
   plugins: [
     postcss({ modules: true }),

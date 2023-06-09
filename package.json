@@ -1,13 +1,25 @@
 {
   "name": "wsr",
-  "version": "1.0.0",
-  "main": "index.ts",
+  "version": "0.1.0",
+  "description": "Web Shake to Report: combines shake.js with html2canvas to provide shake to report functionality for mobile development on web",
+  "author": {
+    "name": "ali garajian",
+    "email": "aligarajian1@gmail.com"
+  },
+  "keywords": [
+    "shake",
+    "report",
+    "debug",
+    "mobile-development"
+  ],
+  "main": "./src/index.ts",
   "license": "MIT",
   "type": "module",
   "typings": "./build/index.d.ts",
   "scripts": {
     "dev": "NODE_ENV=development rollup -cw",
-    "build": "NODE_ENV=production rollup -c"
+    "build": "NODE_ENV=production rollup -c",
+    "publish": "npm run build && npm publish"
   },
   "dependencies": {
     "html2canvas": "^1.4.1",
