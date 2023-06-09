@@ -21,6 +21,7 @@
   flex-direction: column;
   background-color: white;
   padding-bottom: 90px;
+  z-index: 9999;
 }
 .show {
   opacity: 1;
