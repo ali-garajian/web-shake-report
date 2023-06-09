@@ -8,7 +8,7 @@ const isProd = process.env.NODE_ENV === "production";
 export default {
   input: "./src/index.ts",
   output: {
-    file: "./build/index.min.js",
+    file: "./build/index.js",
     format: "es",
   },
   plugins: [
