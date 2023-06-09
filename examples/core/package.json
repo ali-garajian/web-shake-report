@@ -7,9 +7,6 @@
   "scripts": {
     "start": "concurrently \"yarn workspace @wsr/core dev\" \"rollup -cw\""
   },
-  "dependencies": {
-    "lodash": "^4.17.21"
-  },
   "devDependencies": {
     "@babel/core": "^7.21.8",
     "@babel/preset-env": "^7.21.5",
