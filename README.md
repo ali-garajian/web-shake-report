@@ -7,6 +7,13 @@ Combines [shake.js](https://github.com/alexgibson/shake.js/) and [html2canvas](h
 - The module uses `Reporters` to integrate with 3rd party project management platforms. It Provides a `JiraReporter` out of the box, but you could write a reporter for your platform of choosing by implementing the `IReporter` interface.
 - The `WebShakeReport` class accepts a `html2canvasOptions` property and passes it directly to `html2canvas`
 
+### Installation
+
+```
+$ yarn add web-shake-report
+$ npm install web-shake-report
+```
+
 ### Reporters
 
 #### Jira Reporter
