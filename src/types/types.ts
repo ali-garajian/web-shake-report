@@ -1,3 +1,5 @@
+import { Options as HTML2CanvasOptions } from "html2canvas";
+
 export type ReportBody = {
   title: string;
   description: string;
@@ -8,4 +10,5 @@ export interface IReporter {
 }
 export type WSRConfig = {
   reporter: IReporter;
+  html2canvasOptions: HTML2CanvasOptions;
 };
