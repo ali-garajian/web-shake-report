@@ -10,5 +10,5 @@ export interface IReporter {
 }
 export type WSRConfig = {
   reporter: IReporter;
-  html2canvasOptions: HTML2CanvasOptions;
+  html2canvasOptions?: HTML2CanvasOptions;
 };
